@@ -1,0 +1,28 @@
+{
+  "name": "static-site-kindling",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Simple boilerplate setup for Metalsmith-generated static sites based on Handlebars and Stylus",
+  "keywords": [
+    "metalsmith",
+    "boilerplate",
+    "kindling",
+    "handlebars",
+    "stylus"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/attentif/static-site-kindling.git"
+  },
+  "author": "Simon Goumaz <simon@attentif.ch>",
+  "license": "MIT",
+  "main": "build.js",
+  "dependencies": {
+    "handlebars": "^2.0.0",
+    "metalsmith": "^1.1.1",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-stylus": "^0.2.1",
+    "metalsmith-templates": "^0.6.0",
+    "metalsmith-watch": "^0.2.0"
+  }
+}
