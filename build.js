@@ -1,6 +1,7 @@
 var metalsmith = require('metalsmith')(__dirname),
     ignore = require('metalsmith-ignore'),
     markdown = require('metalsmith-markdown'),
+    nib = require('nib'),
     stylus = require('metalsmith-stylus'),
     templates = require('metalsmith-templates'),
     watch = process.argv[2] === 'watch' ? require('metalsmith-watch') : null;
@@ -10,7 +11,7 @@ metalsmith
     .destination('./build')
     .clean(false) // to keep .git, CNAME etc.
     .use(markdown())
-    .use(stylus({nib: true}))
+    .use(stylus({use: [nib()]}))
     .use(templates({
       engine: 'handlebars',
       directory: 'src/_templates'
