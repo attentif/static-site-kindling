@@ -1,6 +1,6 @@
 {
   "name": "static-site-kindling",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "description": "Simple boilerplate setup for Metalsmith-generated static sites based on Handlebars and Stylus",
   "keywords": [
@@ -18,10 +18,10 @@
   "license": "MIT",
   "main": "build.js",
   "dependencies": {
-    "handlebars": "^4.0.12",
+    "handlebars": "^4.1.2",
     "metalsmith": "^2.3.0",
     "metalsmith-ignore": "^1.0.0",
-    "metalsmith-markdown": "^1.1.0",
+    "metalsmith-markdown": "^1.2.0",
     "metalsmith-stylus": "^3.0.0",
     "metalsmith-templates": "^0.7.0",
     "metalsmith-watch": "^1.0.3",
